@@ -13,6 +13,6 @@
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: #007f42; /* iets donkerder voor hover */
+    background-color: #007f42; 
     border-color: #007f42;
 }
