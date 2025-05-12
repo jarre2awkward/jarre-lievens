@@ -9,13 +9,16 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="map.js" defer></script>
 </head>
 
 <body>
   <header class="bg-light border-bottom">
     <nav class="navbar navbar-expand-md navbar-light container">
       <a class="navbar-brand" href="index.html">
-        <img src="assets/images/Logo.png" alt="Logo" width="80">
+        <img src="assets/images/Logo.png" alt="Logo" width="60">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -31,16 +34,22 @@
   </header>
 
   <main class="container py-5">
-    <section class="text-center mb-5">
-      <h1 class="text-uppercase fw-bold PDSS-Blauw">Jarre Lievens</h1>
-      <p class="lead">
-        Ik ben een gepassioneerde student in de richting Internet of Things, met een sterke interesse in technologie, data en automatisering. 
-        Tijdens mijn opleiding heb ik hands-on ervaring opgedaan met sensornetwerken, ESP32-microcontrollers, MQTT-communicatie en visualisaties via Grafana en InfluxDB. 
-        Ik bouw graag slimme systemen die data verzamelen, analyseren en visualiseren – of het nu gaat om klimaatmonitoring, energieverbruik of toegangscontrole via RFID. 
-        Daarnaast werk ik graag projectmatig en hou ik van uitdagingen waarbij ik creatief en oplossingsgericht kan denken. 
-        Buiten school ben ik actief bezig met sport zoals volleybal en backpacken. 
-        Ik ben leergierig, gemotiveerd en klaar om mijn kennis in te zetten in een professionele omgeving.
-      </p>
+    <section class="row mb-5">
+      <section class="col-md-6 mb-4 mb-md-0">
+        <h1 class="text-uppercase fw-bold PDSS-Blauw">Jarre Lievens</h1>
+        <p class="lead">
+          Ik ben een gepassioneerde student in de richting Internet of Things, met een sterke interesse in technologie, data en automatisering. 
+          Tijdens mijn opleiding heb ik hands-on ervaring opgedaan met sensornetwerken, ESP32-microcontrollers, MQTT-communicatie en visualisaties via Grafana en InfluxDB. 
+          Ik bouw graag slimme systemen die data verzamelen, analyseren en visualiseren – of het nu gaat om klimaatmonitoring, energieverbruik of toegangscontrole via RFID. 
+          Daarnaast werk ik graag projectmatig en hou ik van uitdagingen waarbij ik creatief en oplossingsgericht kan denken. 
+          Buiten school ben ik actief bezig met sport zoals volleybal en backpacken. 
+          Ik ben leergierig, gemotiveerd en klaar om mijn kennis in te zetten in een professionele omgeving. Ik ben opgegroeid in Lier, een stad die me inspireerde om technologie vanuit een praktische context te benaderen.
+        </p>
+      </section>
+
+      <section class="col-md-6">
+        <div id="lierMap" style="width: 100%; height: 400px;" aria-label="Kaart van Lier"></div>
+      </section>
     </section>
 
     <section class="row mb-5">
@@ -55,7 +64,7 @@
       </div>
     </section>
   </main>
-  
+
   <footer class="bg-light text-center py-4 mt-auto">
     <p class="mb-0 small">Email: <a href="mailto:s153937@ap.be">s153937@ap.be</a> | Tel: +32 123 45 67 89</p>
     <p class="mb-1 small">&copy; <span id="year"></span> Jarre Lievens</p>

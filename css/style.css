@@ -1,3 +1,18 @@
 .PDSS-Blauw {
     color: #223a8f;
 }
+
+.PDSS-Groen {
+    color: #00954c;
+}
+
+.btn-primary {
+    background-color: #00954c;
+    border-color: #00954c;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #007f42; /* iets donkerder voor hover */
+    border-color: #007f42;
+}
