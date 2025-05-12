@@ -10,31 +10,38 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
-  <script src="map.js" defer></script>
+  <script src="assets/js/map.js" defer></script>
+  <script src="assets/js/year.js" defer></script> 
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="bg-light border-bottom">
-    <nav class="navbar navbar-expand-md navbar-light container">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/images/Logo.png" alt="Logo" width="60">
-      </a>
-      <p class="navbar-text h1" href="index.html">
-        JL Solutions
-      </p>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+
   </header>
+
+  <nav class="navbar navbar-expand-md navbar-light container ">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/images/logo.png" alt="Logo" width="60">
+    </a>
+    <p class="navbar-text h1" href="index.html">
+      JL Solutions
+    </p>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <aside>
+
+  </aside>
 
   <main class="container py-5">
     <section class="row mb-5">
@@ -57,35 +64,27 @@
 
     <section class="row mb-5">
       <div class="col-md-4 mb-3 text-center">
-        <h2 class="PDSS-Groen h6 text-uppercase fw-bold mb-3">Efficiënt werken met Linux</h2>
+        <h2 class="h6 text-uppercase fw-bold mb-3 PDSS-Groen">Efficiënt werken met Linux</h2>
         <p>Tijdens mijn opleiding leerde ik hoe ik Linux als krachtig en lichtgewicht platform kan inzetten om IoT-projecten stabiel te laten draaien.</p>
-        <img src="assets/images/LinuxMan.jpg" class="img-fluid rounded" alt="Man die op een linux machine werkt">
+        <img src="assets/images/linuxman.jpg" class="img-fluid rounded" alt="Man die op een linux machine werkt">
       </div>
       <div class="col-md-4 mb-3 text-center">
-        <h2 class="PDSS-Groen h6 text-uppercase fw-bold mb-3">De toekomst van automatisering</h2>
+        <h2 class="h6 text-uppercase fw-bold mb-3 PDSS-Groen">De toekomst van automatisering</h2>
         <p>IoT en industriële automatisering groeien samen. Mijn projecten zijn gebouwd rond betrouwbare, schaalbare systemen die machines slimmer maken.</p>
-        <img src="assets/images/Robots.jpg" class="img-fluid rounded" alt="Fabrieksband bemand door robots">
+        <img src="assets/images/robots.jpg" class="img-fluid rounded" alt="Fabrieksband bemand door robots">
       </div>
       <div class="col-md-4 mb-3 text-center">
-        <h2 class="PDSS-Groen h6 text-uppercase fw-bold mb-3">Van idee tot hardware</h2>
+        <h2 class="h6 text-uppercase fw-bold mb-3 PDSS-Groen">Van idee tot hardware</h2>
         <p>Met microcontrollers en soldeerbout vertaal ik ideeën naar werkende prototypes die data verzamelen, reageren en communiceren.</p>
-        <img src="assets/images/Solderen.jpg" class="img-fluid rounded" alt="Man soldeert aan elektronica">
+        <img src="assets/images/solderen.jpg" class="img-fluid rounded" alt="Man soldeert aan elektronica">
       </div>
     </section>
   </main>
 
-  <footer class="bg-light text-center py-4 mt-auto">
-    <p class="mb-0 small">Email: <a href="mailto:s153937@ap.be">s153937@ap.be</a> | Tel: +32 123 45 67 89</p>
+  <footer class="fixed-bottom bg-white text-center py-4 mt-auto">
+    <p class="mb-0 small">Email: <a href="mailto:jarrelievens@gmail.com">jarrelievens@gmail.com</a> | <a href="https://www.linkedin.com/in/jarre-lievens-23a9bb32a/" target="_blank">Linkedin</a></p>
     <p class="mb-1 small">&copy; <span id="year"></span> Jarre Lievens</p>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
-
-<aside>
-  
-</aside>
 
 </html>
